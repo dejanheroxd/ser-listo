@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$border-radius: 4px;
+$hover-background: rgb(233, 233, 233);
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  .app-container {
+    // border: 1px solid #000000;
+    border-radius: $border-radius;
+    width: 600px;
+    background-color: white;
+
+    .series-input {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding-top: 23px;
+    }
+
+    .series-input button {
+      padding: 5px 18px;
+      background-color: white;
+      border-radius: $border-radius;
+      border: 1px solid gray;
+      &:hover {
+        cursor: pointer;
+        background-color: $hover-background;
+      }
+    }
+
+    .series-input-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .current {
+      margin-left: 30px;
+      margin-top: 35px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.curr-list-container {
+  height: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.curr-series {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(168, 168, 168);
+  margin: 1rem;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+  .series-header {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .count-ep-container {
+    // border: 1px solid brown;
+
+    .episode-count-btn {
+      // border: 1px solid rgb(0, 153, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .btn-up-down {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+
+      .btn-up-down button {
+        padding: 0px 5px;
+        border: 1px solid rgb(92, 92, 92);
+        background-color: white;
+        border-radius: $border-radius;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $hover-background;
+        }
+      }
+    }
+
+    .episode-count-btn p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .fin-del-btns button {
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    padding: 2px 5px;
+    border: 1px solid gray;
+    border-radius: $border-radius;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.fin-del-btns {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.finish-btn {
+  background-color: rgb(57, 184, 57);
+  color: white;
+  &:hover {
+    background-color: rgb(48, 156, 48);
+  }
+}
+
+.fin-del-btns {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.delete-btn {
+  background-color: rgb(184, 57, 57);
+  color: white;
+  &:hover {
+    background-color: rgb(156, 48, 48);
+  }
+}
+
+.finish-btn {
+  background-color: rgb(57, 184, 57);
+  color: white;
+  &:hover {
+    background-color: rgb(48, 156, 48);
+  }
+}
+
+.delete-btn {
+  background-color: rgb(184, 57, 57);
+  color: white;
+  &:hover {
+    background-color: rgb(156, 48, 48);
+  }
+}
